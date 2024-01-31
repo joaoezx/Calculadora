@@ -3,6 +3,7 @@ function Verificar(){
     var numero2 = parseFloat(document.getElementById("entrada2").value)
     var operador = document.getElementById("operador").value
 
+
     var resultado
 
     if (numero1 < 0 || numero2 < 0) {
@@ -31,6 +32,7 @@ function Verificar(){
         return
     }
  
-    document.getElementById("resultadoValor").innerHTML = resultado
+ 
+    document.getElementById("listaValores").innerHTML += "<li>" + resultado + "</li>"
 } 
 
